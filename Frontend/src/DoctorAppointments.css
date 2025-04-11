@@ -1,0 +1,143 @@
+body {
+    background: linear-gradient(to right, #f0f9ff, #e0f7fa);
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .outer-wrapper {
+    padding: 30px 40px;
+  }
+  
+  /* Main container */
+  .appointment-container {
+    width: 100%;
+    max-width: 242%;
+    margin: 30px auto;
+    padding: 20px;
+      height: 100vh;
+      overflow-y: auto;
+  
+    
+  }
+  /* Header Styling */
+/* Header Styling */
+.appointment-header {
+    background: linear-gradient(to right, #34d399, #3b82f6);
+    padding: 25px;
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    
+  }
+  .outer-scroll-wrapper {
+    overflow-x: auto;
+    padding: 20px;
+  }
+  
+  /* Responsive Cards Grid */
+  /* Container holding all cards */
+  /* Responsive Cards Grid */
+  .appointments-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    gap: 20px;
+    justify-content: center; /* Center the grid */
+    margin-top: 20px;
+  }
+  
+  /* Card Styling */
+  .appointment-card {
+    width: 100%;
+    padding: 25px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #fefefe, #7c95d0);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  
+  
+  .appointment-card:hover {
+    transform: scale(1.015);
+  }
+  
+  .appointment-card h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .appointment-card p {
+    margin: 10px 0;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  .appointment-card strong {
+    color: #222;
+  }
+  
+  /* Status Tags */
+  .status {
+    display: inline-block;
+    padding: 5px 12px;
+    font-weight: 600;
+    border-radius: 12px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .status.active {
+    color: #2ecc71;
+    background-color: #eafaf1;
+  }
+  
+  .status.inactive {
+    color: #e74c3c;
+    background-color: #fdecea;
+  }
+  
+  /* Status Styling */
+  .status {
+    display: inline-block;
+    padding: 5px 12px;
+    font-weight: 600;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-top: 8px;
+    text-transform: capitalize;
+  }
+  
+  .status.not\ checked {
+    background-color: #fde68a;
+    color: #92400e;
+  }
+  
+  .status.checked {
+    background-color: #d1fae5;
+    color: #065f46;
+  }
+  
+  /* Utility classes */
+  .no-data {
+    text-align: center;
+    color: #64748b;
+    font-size: 18px;
+    padding: 40px;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 60px;
+    font-size: 20px;
+    color: #334155;
+  }
+  

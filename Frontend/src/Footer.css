@@ -1,0 +1,53 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+
+}
+.footer {
+    width: 100%;  /* Make the footer full-width */
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    height: 25%;
+}
+
+.footer-top {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto 0;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px; /* Ensures sections don’t collapse */
+    padding: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Ensure footer covers full viewport width */
+body {
+    margin: 0;
+    padding: 0;
+}

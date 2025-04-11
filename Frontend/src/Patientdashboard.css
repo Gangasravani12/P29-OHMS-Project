@@ -1,0 +1,78 @@
+/* Wrapper for the entire dashboard page */
+.patient-dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100vw; /* Full width of the browser */
+  min-height: 100vh; /* Full height of the screen */
+  box-sizing: border-box;
+  padding: 30px;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Shared container style for forms, content, etc */
+.shared-container {
+  width: 100%;
+  max-width: 100%;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Title Styling */
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/* Card container */
+.dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Individual dashboard card */
+.card {
+  background: linear-gradient(to bottom right, #ffffff, #f8fafc);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+  width: calc(33.33% - 20px); /* 3 cards in a row with spacing */
+  min-width: 260px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background-color: #e0f2fe;
+}
+
+.card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.card .title {
+  font-weight: bold;
+  color: #0f172a;
+  margin-bottom: 6px;
+  font-size: 1.2rem;
+}
+
+.card .subtitle {
+  color: #3b82f6;
+  font-size: 0.95rem;
+}

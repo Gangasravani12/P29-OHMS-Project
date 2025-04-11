@@ -1,0 +1,116 @@
+/* Doctor Profile Page Styling */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f7fe;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  .doctor-profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 2rem;
+    background: linear-gradient(145deg, #ffffff, #f0f4ff);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #dce1f5;
+  }
+  
+  .doctor-profile-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1a237e;
+    margin-bottom: 1rem;
+    background: #e3f2fd;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .doctor-profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .doctor-profile-label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #37474f;
+  }
+  
+  .doctor-profile-input {
+    width: 100%;
+    padding: 14px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: transparent;
+    transition: 0.3s ease;
+  }
+  
+  .doctor-profile-input:focus {
+    outline: none;
+    border-color: #4c8bf5;
+    background-color: #fff;
+  }
+  
+  .doctor-profile-input:disabled {
+    background-color: #e3eaf6;
+    cursor: not-allowed;
+  }
+  
+  .doctor-profile-button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #4c8bf5, #6b9eff);
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.4s ease;
+  }
+  
+  .doctor-profile-button::before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.5s ease;
+  }
+  
+  .doctor-profile-button:hover::before {
+    width: 100%;
+  }
+  
+  .doctor-profile-button:hover {
+    background: linear-gradient(to right, #3a6fd9, #577cf7);
+  }
+  
+  .message {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .success {
+    color: #28a745;
+  }
+  
+  .error {
+    color: #dc3545;
+  }
+  

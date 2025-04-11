@@ -1,0 +1,140 @@
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #60a5fa, #3b82f6);
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .login-box {
+    width: 500px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .login-header {
+    background-color: #2563eb;
+    color: white;
+    padding: 24px;
+    text-align: center;
+  }
+  
+  .login-body {
+    padding: 24px;
+  }
+  
+  .role-selector {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .role-button {
+    flex: 1;
+    background-color: #e0f2fe;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: #2563eb;
+  }
+  
+  .role-button.active {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .password-group {
+    position: relative;
+  }
+  
+  .password-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding-right: 10px;
+  }
+  
+  .password-input input {
+    border: none;
+    flex: 1;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .password-input button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6b7280;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+  }
+  
+  .submit-button {
+    background-color: #2563eb;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #1e40af;
+  }
+  
+  .login-footer {
+    padding: 16px;
+    text-align: center;
+    background-color: #f9fafb;
+    font-size: 14px;
+  }
+  
+  .signup-button {
+    background: none;
+    border: none;
+    color: #2563eb;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  

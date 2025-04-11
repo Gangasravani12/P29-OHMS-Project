@@ -1,0 +1,89 @@
+/* About Page Container */
+body{
+    overflow-x: hidden;
+}
+.about-container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    overflow: hidden;
+}
+
+/* Text Content */
+.about-content {
+    max-width: 800px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Headings */
+.about-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ff8c00, #ffa500, #ffbb33);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Paragraph Styling */
+.about-content p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+/* Key Features List */
+.features-list {
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Icons */
+.features-list li::before {
+    content: "✔️";
+    font-size: 1.5rem;
+    color: #ffbb33;
+}
+
+/* Fade In Effect */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide In Effect */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

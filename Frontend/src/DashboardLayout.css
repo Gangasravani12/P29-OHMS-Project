@@ -1,0 +1,137 @@
+/* Global Layout */
+.dashboard-layout {
+  display: flex;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background: #f0f4f8;
+  overflow-x: hidden; /* ✅ Prevent horizontal scroll */
+  overflow-y: hidden;
+}
+
+
+/* Sidebar */
+.sidebar {
+  width: 270px;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 50;
+}
+
+/* Sidebar Header */
+.sidebar-header h2 {
+  font-size: 26px;
+  font-family: cursive;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.main-content {
+  margin-left: 270px; /* Matches sidebar width */
+  padding: 30px 40px;
+  width: calc(100% - 270px); /* Full width minus sidebar */
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* Sidebar Links */
+.sidebar-nav {
+  flex-grow: 1;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 20px;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  display: block;
+  transition: color 0.3s;
+}
+
+.sidebar-nav a:hover {
+  color: #60a5fa;
+}
+
+/* Logout button moved to top */
+.logout-button {
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+.logout-btn {
+  background-color: #ef4444;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Main Content beside the Sidebar */
+/* .main-content {
+  margin-left: 310px; 
+  
+  padding: 20px;
+  background: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* Header */
+
+
+/* User Info (optional block at top) */
+.main-header {
+  width: 100%;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  padding: 18px 30px;
+  color: white;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.user-info {
+  align-self: flex-end;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Adjust Forms & Containers if needed */
+.form-container {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
